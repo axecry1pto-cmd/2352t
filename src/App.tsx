@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { generateMnemonic, validateMnemonic, mnemonicToSeedSync } from 'bip39';
-import { RefreshCw, Copy, CheckCircle, AlertCircle, Info, Sparkles } from 'lucide-react';
+import { RefreshCw, Copy, CheckCircle, Info, Sparkles } from 'lucide-react';
 
 interface GeneratedPhrase {
   mnemonic: string;
