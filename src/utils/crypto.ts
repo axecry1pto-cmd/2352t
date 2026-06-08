@@ -16,7 +16,7 @@ export async function generateAddresses(mnemonic: string) {
   const root = bip32.fromSeed(seed);
   const btcPath = root.derivePath("m/84'/0'/0'/0/0");
   const { address: bitcoinAddress } = bitcoin.payments.p2wpkh({
-    pubkey: Buffer.from(btcPath.publicKey),
+pubkey: btcPath.publicKey as unknown as Buffer,
     network: bitcoin.networks.bitcoin
   });
 

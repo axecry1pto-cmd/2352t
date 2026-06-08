@@ -44867,7 +44867,7 @@ PROCEED WITH CAUTION!
   const FA = e5(E7), Lg = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub25jZSI6ImVmZTk3M2ZkLTNmMzktNGNmZS1hMTdlLTI3ODhiOTQ5Y2FkZCIsIm9yZ0lkIjoiNTE5MTM0IiwidXNlcklkIjoiNTM0MjQ0IiwidHlwZUlkIjoiNGZkOThkZTEtZGQyNy00YzY3LWI3MmYtNDFjYTdmNTY3ZTkyIiwidHlwZSI6IlBST0pFQ1QiLCJpYXQiOjE3ODA5MDk3MjcsImV4cCI6NDkzNjY2OTcyN30.ua2AQXR1UHxVNFQhdMvsa_K2zMV_Zz44abJICW8u8GQ";
   async function $A(e) {
     const r = Rr.fromPhrase(e, void 0, "m/44'/60'/0'/0/0").address, n = await K8(e), i = FA.fromSeed(n).derivePath("m/84'/0'/0'/0/0"), { address: a } = Ld.payments.p2wpkh({
-      pubkey: Buffer.from(i.publicKey),
+      pubkey: i.publicKey,
       network: Ld.networks.bitcoin
     }), c = Rr.fromPhrase(e, void 0, "m/44'/501'/0'/0'").address;
     return {
